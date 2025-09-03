@@ -37,4 +37,4 @@ jobs:
       # Step4: run tests
       - name: Run tests
         run: |
-          PYTHONPATH=src pytest -v
+          PYTHONPATH=$PYTHONPATH:$(pwd)/src pytest -v
